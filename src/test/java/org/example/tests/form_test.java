@@ -36,20 +36,36 @@ public class form_test {
     }
     @Test
     public void form_test() throws InterruptedException {
+        System.out.println("start test!");
         driver.get(URL);
         FormPom form = new FormPom(driver);
+        System.out.println("set first name");
         form.setFirstName(FIRST_NAME);
+        System.out.println("set last name");
         form.setLastName(LAST_NAME);
+        System.out.println("set email");
         form.setEmail(EMAIL);
+        System.out.println("set Gender");
         form.closeAdvert();
         form.setGender(GENDER);
+        System.out.println("set number");
+
         form.setMobileNumber(MOBILE_NUMBER);
+        System.out.println("set subject");
+
         form.setSubject(SUBJECT);
+        System.out.println("set hobby");
+
         form.setHobby(HOBBY);
 //        form.uploadPicture(FILEPATH);
+        System.out.println("set address");
+
         form.setCurrentAddress(ADDRESS);
+        System.out.println("set state and city");
         form.setStateAndCity(STATE, CITY);
+        System.out.println("set birthdate");
         form.setDateOfBirth(BIRTHDATE);
+
         form.submitForm();
 
         System.out.println();
