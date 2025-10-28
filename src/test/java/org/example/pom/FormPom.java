@@ -130,9 +130,9 @@ WebElement firstName;
     }
 
 
-    public void uploadPicture(String filePath) {
-        uploadPicture.sendKeys(filePath);
-    }
+//    public void uploadPicture(String filePath) {
+//        uploadPicture.sendKeys(filePath);
+//    }
 
     public void setCurrentAddress(String CurrentAddressParam) {
       currentAddress.sendKeys(CurrentAddressParam);

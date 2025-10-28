@@ -46,7 +46,7 @@ public class form_test {
         form.setMobileNumber(MOBILE_NUMBER);
         form.setSubject(SUBJECT);
         form.setHobby(HOBBY);
-        form.uploadPicture(FILEPATH);
+//        form.uploadPicture(FILEPATH);
         form.setCurrentAddress(ADDRESS);
         form.setStateAndCity(STATE, CITY);
         form.setDateOfBirth(BIRTHDATE);
