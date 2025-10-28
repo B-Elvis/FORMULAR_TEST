@@ -67,8 +67,8 @@ public class form_test {
         form.setDateOfBirth(BIRTHDATE);
 
         form.submitForm();
-
-        System.out.println();
+        Thread.sleep(2000);
+        System.out.println("start assert");
         Assert.assertEquals(form.getActualFirstName(), FIRST_NAME);
         Assert.assertEquals(form.getActualLastName(), LAST_NAME);
         Assert.assertEquals(form.getActualGender(), GENDER);
@@ -83,7 +83,7 @@ public class form_test {
         Assert.assertEquals(form.getActualCity(), CITY);
         Assert.assertEquals(form.getActualBirthdate(), BIRTHDATE);
 
-
+        System.out.println("finish_assert");
         Thread.sleep(2000);
 
 
