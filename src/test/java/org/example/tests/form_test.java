@@ -67,7 +67,7 @@ public class form_test {
         form.setDateOfBirth(BIRTHDATE);
 
         form.submitForm();
-        Thread.sleep(2000);
+        Thread.sleep(7000);
         System.out.println("start assert");
         Assert.assertEquals(form.getActualFirstName(), FIRST_NAME);
         Assert.assertEquals(form.getActualLastName(), LAST_NAME);

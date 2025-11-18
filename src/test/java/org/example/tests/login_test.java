@@ -29,8 +29,10 @@ public class login_test {
         driver.get(URL);
         LoginPom loginPom = new LoginPom(driver);
         loginPom.setUserName(USER_NAME);
+        System.out.println("set username");
+
         loginPom.setPassword(PASSWORD);
-        System.out.println("start assert");
+        System.out.println("set password");
         loginPom.closeAdvert();
         Assert.assertEquals(loginPom.clickLogin(),USER_NAME);
         System.out.println("finish_assert");
